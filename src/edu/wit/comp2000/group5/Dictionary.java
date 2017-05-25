@@ -48,7 +48,7 @@ public class Dictionary {
 		
 		ArrayList<String> listOfWords = new ArrayList<String>();
 		try {
-			Scanner inFile = new Scanner(new FileReader("src/american-english-JL.txt"));
+			Scanner inFile = new Scanner(new FileReader("american-english-JL.txt"));
 			while(inFile.hasNextLine()) {
 				listOfWords.add(inFile.nextLine().toLowerCase());
 			}
