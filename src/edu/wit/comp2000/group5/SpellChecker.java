@@ -42,6 +42,7 @@ public class SpellChecker {
 			
 			int correctCount = 0;
 			int wrongCount = 0;
+			ArrayList<String> wrongWords = new ArrayList<>();
 			
 			if(!listOfWords.isEmpty() && listOfWords != null) {
 				for(String word : listOfWords) {
@@ -49,15 +50,19 @@ public class SpellChecker {
 						correctCount++;
 					}
 					else {
-						System.out.println(word);
+						wrongWords.add(word);
 						wrongCount++;
 					}
 					
 				}
 			}
 			
-			System.out.println("CORRECT: " + correctCount);
-			System.out.println("INCORRECT: " + wrongCount);
+			System.out.println("Correct: " + correctCount);
+			System.out.println("Incorrect: " + wrongCount);
+			System.out.println("Words mispelled: " );
+			for (int i = 0; i < wrongWords.size(); i++){
+				System.out.println(wrongWords.get(i));
+			}
 			System.out.println();
 			
 			/*if(!listOfWords.isEmpty())
@@ -68,9 +73,14 @@ public class SpellChecker {
 	}
 			
 	public static void main(String[] args) {
+		System.out.println("CHECKING FILE: wit-attendance-policy.txt");
 		new SpellChecker("wit-attendance-policy.txt");
+
+		System.out.println("CHECKING FILE: the-lancashire-cotton-famine.txt");
 		new SpellChecker("the-lancashire-cotton-famine.txt");
-		
+
+		System.out.println("CHECKING FILE: sources.txt");
+		new SpellChecker("sources.txt");
 	}
 
 }
