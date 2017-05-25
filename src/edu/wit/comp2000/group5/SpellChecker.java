@@ -81,7 +81,6 @@ public class SpellChecker {
 
 		System.out.println("CHECKING FILE: sources.txt");
 		new SpellChecker("sources.txt");
-		
 	}
 
 }
