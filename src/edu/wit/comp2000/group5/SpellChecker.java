@@ -68,7 +68,8 @@ public class SpellChecker {
 	}
 			
 	public static void main(String[] args) {
-		new SpellChecker("src/wit-attendance-policy.txt");
+		new SpellChecker("wit-attendance-policy.txt");
+		new SpellChecker("the-lancashire-cotton-famine.txt");
 		
 	}
 
