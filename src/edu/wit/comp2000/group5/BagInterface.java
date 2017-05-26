@@ -1,5 +1,11 @@
 package edu.wit.comp2000.group5;
 
+/*
+ * Names: Ryan Reid and Andres Prato
+ * Group#: 5
+ * Course: COMP 2000-01
+ * Assignment: Bag ADT Application (SpellChecker)
+ */
 /**
 An interface that describes the operations of a bag of objects.
 @author Frank M. Carrano

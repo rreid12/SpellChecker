@@ -1,5 +1,13 @@
 package edu.wit.comp2000.group5;
 
+import java.util.Scanner;
+
+/*
+ * Names: Ryan Reid and Andres Prato
+ * Group#: 5
+ * Course: COMP 2000-01
+ * Assignment: Bag ADT Application (SpellChecker)
+ */
 /**
  * @author David M Rosenberg
  *
@@ -57,5 +65,17 @@ public enum BagImplementationSelector {
 	public String toString() {
 		return displayName;
 	} // end method toString()
+	
+	
+	public static void main(String[] args) {
+		//testing 
+		
+		System.out.println("Enter choice of implementation: ");
+		Scanner in = new Scanner(System.in);
+		String anImplementation = in.nextLine();
+		
+		System.out.println(BagImplementationSelector.interpretDescription(anImplementation));
+		
+	}
 
 } // end enum BagImplementationSelector

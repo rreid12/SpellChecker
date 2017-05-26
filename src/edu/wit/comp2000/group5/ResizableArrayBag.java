@@ -2,6 +2,12 @@ package edu.wit.comp2000.group5;
 
 import java.util.Arrays;
 
+/*
+ * Names: Ryan Reid and Andres Prato
+ * Group#: 5
+ * Course: COMP 2000-01
+ * Assignment: Bag ADT Application (SpellChecker)
+ */
 /**
  * A class that implements a bag of objects by using an array. The bag is never
  * full.
